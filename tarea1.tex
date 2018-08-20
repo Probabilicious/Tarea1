@@ -100,13 +100,18 @@
 
 		Digamos que queremos formar subconjuntos de $S$ que contengan a un elemento
 		$s \in S$.\\
-		Hay $2^n$ subconjunto de S. Además, todos los subconjuntos de $S$ que no
-		contengan a $s$ son también subconjuntos de $S \setminus \{s\}$, que tiene $2^{n-1}$
+		Hay $2^n$ subconjunto de S. Si consideramos a todos los subconjuntos de $S$ que no
+		contengan a $s$, estos deben ser subconjuntos de $S \setminus \{s\}$, que tiene $2^{n-1}$
 		posibles subconjuntos. Entonces la cantidad de subconjuntos de $S$ que
 		contienen a $s$ son\\
-		$2^n - 2^{n-1} = 2^{n - 1 + 1} - 2^{n-1} = 2^{n-1}(2 - 1) = 2^{n-1}$\\
+		\begin{equation*}
+			2^n - 2^{n-1} = 2^{n - 1 + 1} - 2^{n-1} = 2^{n-1}(2 - 1) = 2^{n-1}
+		\end{equation*}\\
 		Y la proporción de subconjuntos que lo cumplen son\\
-		 $\frac{2^{n-1}}{2^n}	= \frac{(2^n) (2^-1)}{2^n} = 2^{-1} = \frac{1}{2}$.\\\\
+		\begin{equation*}
+			\frac{2^{n-1}}{2^n}	= \frac{(2^n) (2^-1)}{2^n} = 2^{-1} = \frac{1}{2}
+		\end{equation*}
+		\\\\
 	}
 
 	% Ejercicio 5
