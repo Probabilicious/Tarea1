@@ -27,7 +27,7 @@
 	 \vspace{.5cm}
 	{\Large\itshape Alan Ernesto Arteaga Vázquez \par}
 	\vfill
-	
+
 	\vfill
 
 % Bottom of the page
@@ -43,8 +43,8 @@
    edificio y 7 caminos para ir del ’nuevo’ edificio al Yelizcalli.
    ¿Cuántos caminos existen para ir del edificio O al Yelizcalli
    (pasando por el nuevo edificio)?\\
-	
-	
+
+
 	}
 
 	% Ejercicio 2
@@ -54,22 +54,22 @@
 		%a)
 		\item{
 		¿De cuántas formas pueden ser seleccionados los 6 amigos?\\
-		
+
 		$10 \choose 6 $ = $\Comb{10}{6}=\frac{10!}{6!(10-6)!}$ = 210 formas.\\
 		}
-		
+
 		%b)
 		\item{
         ¿De cuántas formas pueden ser seleccionados si 2 de los amigos están
         peleados y no asisitirán juntos?\\
-            
+
         El estudiante puede invitar a uno de los dos amigos peleados o a ninguno \\
-          
-         $(\Comb{2}{1} \boldsymbol{\cdot} \Comb{8}{5}) +(\Comb{2}{0} \boldsymbol{\cdot} \Comb{8}{6})$ = 86 formas.\\                   
+
+         $(\Comb{2}{1} \boldsymbol{\cdot} \Comb{8}{5}) +(\Comb{2}{0} \boldsymbol{\cdot} \Comb{8}{6})$ = 86 formas.\\
 		}
 	\end{enumerate}
 	}
-	
+
 
 	% Ejercicio 3
    \item {
@@ -80,16 +80,16 @@
 	% a)
    \item {
 	esternocleidomastoideo?\\
-	
+
    }
-   
+
    % b)
    \item {
    polen?\\
-   
+
    }
 	\end{enumerate}
-      
+
 	}
 
 	% Ejercicio 4
@@ -97,7 +97,21 @@
     Sea $S = \{1, 2, 3, ... , n\}$ ¿Cuántos subconjuntos de S se pueden
     formar que tengan algún elemento en particular?. ¿Qué proporción
     representa del total de todos los posibles subconjuntos de $S$?\\\\
-	
+
+		Digamos que queremos formar subconjuntos de $S$ que contengan a un elemento
+		$s \in S$.\\
+		Hay $2^n$ subconjunto de S. Si consideramos a todos los subconjuntos de $S$ que no
+		contengan a $s$, estos deben ser subconjuntos de $S \setminus \{s\}$, que tiene $2^{n-1}$
+		posibles subconjuntos. Entonces la cantidad de subconjuntos de $S$ que
+		contienen a $s$ son\\
+		\begin{equation*}
+			2^n - 2^{n-1} = 2^{n - 1 + 1} - 2^{n-1} = 2^{n-1}(2 - 1) = 2^{n-1}
+		\end{equation*}\\
+		Y la proporción de subconjuntos que lo cumplen son\\
+		\begin{equation*}
+			\frac{2^{n-1}}{2^n}	= \frac{(2^n) (2^-1)}{2^n} = 2^{-1} = \frac{1}{2}
+		\end{equation*}
+		\\\\
 	}
 
 	% Ejercicio 5
@@ -108,17 +122,17 @@
 	% a
    \item {
    ¿5 personas son hombres y ellos se deben de sentar juntos?\\
-   
+
    }
-   
+
    % b
    \item {
    ¿Hay 4 parejas y cada pareja se debe sentar junta?\\
-   
+
    }
-	
+
 	\end{enumerate}
-        
+
     }
 
 	% Ejercicio 6
@@ -130,14 +144,14 @@
 	% a
    \item {
    ¿De cuántas formas puede hacer la elección de las preguntas?\\
-   
+
    }
-   
+
    % b
    \item {
    ¿De cuántas formas puede puede hacer la elección si debe de responder
    al menos tres preguntas de las primeras 5?\\
-          
+
    }
 	\end{enumerate}
     }
