@@ -6,7 +6,9 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage{ragged2e}
+\usepackage{enumitem}
+
+
 
 \newcommand*{\Comb}[2]{{}^{#1}C_{#2}}
 
@@ -50,12 +52,12 @@
 	% Ejercicio 2
    \item {
     Un estudiante tiene 10 amigos, de los cuales 6 serán invitados.\\
-		\begin{enumerate}
+		\begin{enumerate}[label=\alph*) ]
 		%a)
 		\item{
 		¿De cuántas formas pueden ser seleccionados los 6 amigos?\\
 
-		$10 \choose 6 $ = $\Comb{10}{6}=\frac{10!}{6!(10-6)!}$ = 210 formas.\\
+		$\Comb{10}{6} =$ $10 \choose 6 $ = $\frac{10!}{6!(10-6)!}$ = 210 formas.\\
 		}
 
 		%b)
@@ -63,9 +65,9 @@
         ¿De cuántas formas pueden ser seleccionados si 2 de los amigos están
         peleados y no asisitirán juntos?\\
 
-        El estudiante puede invitar a uno de los dos amigos peleados o a ninguno \\
+        El estudiante puede invitar a uno de los dos amigos peleados o a ninguno, así que sumamos las combinaciones de los dos casos: \\
 
-         $(\Comb{2}{1} \boldsymbol{\cdot} \Comb{8}{5}) +(\Comb{2}{0} \boldsymbol{\cdot} \Comb{8}{6})$ = 86 formas.\\
+         $(\Comb{2}{1} \boldsymbol{\cdot} \Comb{8}{5}) +(\Comb{2}{0} \boldsymbol{\cdot} \Comb{8}{6})$ = 140 formas.\\
 		}
 	\end{enumerate}
 	}
@@ -76,16 +78,16 @@
     ¿Cuántas palabras (con o sin sentido) son posibles de formar usando todas
     las letras de la palabra\\
 
-	\begin{enumerate}
+	\begin{enumerate}[label=\alph*) ]
 	% a)
    \item {
-	esternocleidomastoideo?\\
+	¿esternocleidomastoideo?\\
 
    }
 
    % b)
    \item {
-   polen?\\
+   ¿polen?\\
 
    }
 	\end{enumerate}
@@ -118,7 +120,7 @@
    \item {
     ¿De cuántas formas se pueden sentar 8 personas en una fila si\\
 
-	\begin{enumerate}
+	\begin{enumerate}[label=\alph*) ]
 	% a
    \item {
    ¿5 personas son hombres y ellos se deben de sentar juntos?\\
@@ -140,10 +142,12 @@
     Un estudiante de la Facultad de Ciencias tiene para escoger 7 preguntas
     de un total de 10 en un examen de probabilidad.\\
 
-	\begin{enumerate}
+	\begin{enumerate}[label=\alph*) ]
 	% a
    \item {
    ¿De cuántas formas puede hacer la elección de las preguntas?\\
+	
+	$\Comb{10}{7}$ = 120 formas.\\
 
    }
 
@@ -151,6 +155,10 @@
    \item {
    ¿De cuántas formas puede puede hacer la elección si debe de responder
    al menos tres preguntas de las primeras 5?\\
+
+	Como el estudiante debe elegir al menos 3 de las primeras 5 preguntas, tomamos la suma de las combinaciones en los casos donde escoja 3, 4 o 5 de las primeras preguntas respectivamente.  \\
+
+         $(\Comb{5}{3} \boldsymbol{\cdot} \Comb{5}{4}) +(\Comb{5}{4} \boldsymbol{\cdot} \Comb{5}{3}) +(\Comb{5}{5} \boldsymbol{\cdot} \Comb{5}{2})$ = 110 formas.\\
 
    }
 	\end{enumerate}
