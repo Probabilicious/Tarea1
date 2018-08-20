@@ -8,8 +8,6 @@
 \usepackage{graphicx}
 \usepackage{enumitem}
 
-
-
 \newcommand*{\Comb}[2]{{}^{#1}C_{#2}}
 
 \begin{document}
@@ -37,6 +35,8 @@
 \end{titlepage}
 
 \pagebreak
+\setlength{\voffset}{-0.75in}
+\setlength{\headsep}{5pt}
 
 \begin{enumerate}
    % Ejercicio 1
@@ -46,7 +46,12 @@
    ¿Cuántos caminos existen para ir del edificio O al Yelizcalli
    (pasando por el nuevo edificio)?\\
 
+	Si se tienen 6 caminos para ir del edificio O al nuevo, y 7 del nuevo al
+	Yelizcalli, se sigue que por principio básico de conteo, existen
+		$$ 6 \times 7 = 42$$
 
+	posibles caminos elegibles para ir del edificio O al Yelizcalli pasando por
+	el edificio nuevo.
 	}
 
 	% Ejercicio 2
