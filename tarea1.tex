@@ -99,14 +99,14 @@
     representa del total de todos los posibles subconjuntos de $S$?\\\\
 
 		Digamos que queremos formar subconjuntos de $S$ que contengan a un elemento
-		$s \in S$.
+		$s \in S$.\\
 		Hay $2^n$ subconjunto de S. Además, todos los subconjuntos de $S$ que no
-		contengan a $s$ son también subconjuntos de $S / {s}$, que tiene $2^(n-1)$
+		contengan a $s$ son también subconjuntos de $S \setminus \{s\}$, que tiene $2^{n-1}$
 		posibles subconjuntos. Entonces la cantidad de subconjuntos de $S$ que
-		contienen a $s$ son $2^n - 2^(n-1) = 2^n - 2^n * 2^-1 = 2^n(1 - 2^-1) =
-		2^n(2^-1) = 2^(n-1)$
-		Y la proporción de subconjuntos que lo cumplen son $\frac{2^⁽n-1), 2^n} =
-		 \frac{2^n * 2^-1, 2^n} = 2^-1 = \frac{1, 2}$\\
+		contienen a $s$ son\\
+		$2^n - 2^{n-1} = 2^{n - 1 + 1} - 2^{n-1} = 2^{n-1}(2 - 1) = 2^{n-1}$\\
+		Y la proporción de subconjuntos que lo cumplen son\\
+		 $\frac{2^{n-1}}{2^n}	= \frac{(2^n) (2^-1)}{2^n} = 2^{-1} = \frac{1}{2}$.\\\\
 	}
 
 	% Ejercicio 5
