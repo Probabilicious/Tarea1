@@ -1,4 +1,4 @@
-% ====== TAREA 1 DEPROBABILIDAD ======
+% ====== TAREA 1 DE PROBABILIDAD ======
 
 \documentclass[12pt,a4paper]{report}
 \usepackage[utf8x]{inputenc}
@@ -6,6 +6,10 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{ragged2e}
+
+\newcommand*{\Comb}[2]{{}^{#1}C_{#2}}
+
 \begin{document}
 \begin{titlepage}
 	\centering
@@ -27,47 +31,115 @@
 	\vfill
 
 % Bottom of the page
-	{\large \today\par}
+	{\large Martes 21 de Agosto del 2018 \par}
 \end{titlepage}
 
 \pagebreak
-    1. Supongamos que existen 6 caminos para ir del edificio O al ’nuevo’
-       edificio y 7 caminos para ir del ’nuevo’ edificio al Yelizcalli.
-       ¿Cuántos caminos existen para ir del edificio O al Yelizcalli
-       (pasando por el nuevo edificio)?\\
 
+\begin{enumerate}
+   % Ejercicio 1
+   \item {
+   Supongamos que existen 6 caminos para ir del edificio O al ’nuevo’
+   edificio y 7 caminos para ir del ’nuevo’ edificio al Yelizcalli.
+   ¿Cuántos caminos existen para ir del edificio O al Yelizcalli
+   (pasando por el nuevo edificio)?\\
+	
+	
+	}
 
-    2. Un estudiante tiene 10 amigos, de los cuales 6 serán invitados.\\
+	% Ejercicio 2
+   \item {
+    Un estudiante tiene 10 amigos, de los cuales 6 serán invitados.\\
+		\begin{enumerate}
+		%a)
+		\item{
+		¿De cuántas formas pueden ser seleccionados los 6 amigos?\\
+		
+		$10 \choose 6 $ = $\Comb{10}{6}=\frac{10!}{6!(10-6)!}$ = 210 formas.\\
+		}
+		
+		%b)
+		\item{
+        ¿De cuántas formas pueden ser seleccionados si 2 de los amigos están
+        peleados y no asisitirán juntos?\\
+            
+        El estudiante puede invitar a uno de los dos amigos peleados o a ninguno \\
+          
+         $(\Comb{2}{1} \boldsymbol{\cdot} \Comb{8}{5}) +(\Comb{2}{0} \boldsymbol{\cdot} \Comb{8}{6})$ = 86 formas.\\                   
+		}
+	\end{enumerate}
+	}
+	
 
-        a) ¿De cuántas formas pueden ser seleccionados los 6 amigos?
+	% Ejercicio 3
+   \item {
+    ¿Cuántas palabras (con o sin sentido) son posibles de formar usando todas
+    las letras de la palabra\\
 
-        b) ¿De cuántas formas pueden ser seleccionados si 2 de los amigos están
-            peleados y no asisitirán juntos?\\\\
+	\begin{enumerate}
+	% a)
+   \item {
+	esternocleidomastoideo?\\
+	
+   }
+   
+   % b)
+   \item {
+   polen?\\
+   
+   }
+	\end{enumerate}
+      
+	}
 
-    3. ¿Cuántas palabras (con o sin sentido) son posibles de formar usando todas
-       las letras de la palabra\\
+	% Ejercicio 4
+   \item {
+    Sea $S = \{1, 2, 3, ... , n\}$ ¿Cuántos subconjuntos de S se pueden
+    formar que tengan algún elemento en particular?. ¿Qué proporción
+    representa del total de todos los posibles subconjuntos de $S$?\\\\
+	
+	}
 
-       a) esternocleidomastoideo?
+	% Ejercicio 5
+   \item {
+    ¿De cuántas formas se pueden sentar 8 personas en una fila si\\
 
-       b) polen?\\\\
+	\begin{enumerate}
+	% a
+   \item {
+   ¿5 personas son hombres y ellos se deben de sentar juntos?\\
+   
+   }
+   
+   % b
+   \item {
+   ¿Hay 4 parejas y cada pareja se debe sentar junta?\\
+   
+   }
+	
+	\end{enumerate}
+        
+    }
 
+	% Ejercicio 6
+   \item {
+    Un estudiante de la Facultad de Ciencias tiene para escoger 7 preguntas
+    de un total de 10 en un examen de probabilidad.\\
 
-    4. Sea $S = \{1, 2, 3, ... , n\}$ ¿Cuántos subconjuntos de S se pueden
-       formar que tengan algún elemento en particular?. ¿Qué proporción
-       representa del total de todos los posibles subconjuntos de $S$?\\\\
-
-    5. ¿De cuántas formas se pueden sentar 8 personas en una fila si\\
-
-        a) 5 personas son hombres y ellos se deben de sentar juntos?
-
-        b) hay 4 parejas y cada pareja se debe sentar junta?\\\\
-
-    6. Un estudiante de la Facultad de Ciencias tiene para escoger 7 preguntas
-       de un total de 10 en un examen de probabilidad.\\
-
-       a) ¿De cuántas formas puede hacer la elección de las preguntas?
-
-       b) ¿De cuántas formas puede puede hacer la elección si debe de responder
-          al menos tres preguntas de las primeras 5?\\\\
-
+	\begin{enumerate}
+	% a
+   \item {
+   ¿De cuántas formas puede hacer la elección de las preguntas?\\
+   
+   }
+   
+   % b
+   \item {
+   ¿De cuántas formas puede puede hacer la elección si debe de responder
+   al menos tres preguntas de las primeras 5?\\
+          
+   }
+	\end{enumerate}
+    }
+\end{enumerate}
 \end{document}
