@@ -131,12 +131,16 @@
 	% a
    \item {
    ¿5 personas son hombres y ellos se deben de sentar juntos?\\
+   Podemos contar al grupo de hombres y permutarlos entre ellos. Haciendo esto, obtenemos que hay $5!$ formas de acomodar a los 5 hombres. Además, este último bloque puede estar en 4 posiciones distintas cumpliendo la condición de que los 5 hombres estén juntos. Finalmente, permutamos a las otras 3 personas de $3!$ formas distintas. Así, podemos combinar a este grupo de personas de $$5!\cdot 4 \cdot 3! = 5! \cdot 4! = 2880$$ Maneras distintas.
 
    }
 
    % b
    \item {
    ¿Hay 4 parejas y cada pareja se debe sentar junta?\\
+   Tomando a cada pareja cómo un solo subgrupo, obtenemos 4 subrupos, los cuales podemos acomodar de $4!$ maneras distintas.\\
+    Por otro lado, cada pareja la podemos acomodar de 2 maneras diferentes. Así, obtenemos $2 \cdot 2 \cdot 2 \cdot 2 = 2^4$ maneras distintas de que los integrantes de cada pareja estén ordenados entre ellos.\\
+    Por lo tanto, hay $$ 4! \cdot 2^4 = 384$$ Maneras distintas de que las parejas se sienten juntas. 
 
    }
 
